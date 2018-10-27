@@ -114,6 +114,14 @@
                 android:gravity="center_horizontal">
 
                 <CheckBox
+                    android:id="@+id/pref8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="low fat" />
+
+                <CheckBox
                     android:id="@+id/pref5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -135,134 +143,6 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal">
 
-                <CheckBox
-                    android:id="@+id/pref8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="1dp"
-                    android:text="low fat" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <CheckBox
-                    android:id="@+id/pref8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="1dp"
-                    android:text="low fat" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <CheckBox
-                    android:id="@+id/pref8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="1dp"
-                    android:text="low fat" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <CheckBox
-                    android:id="@+id/pref8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="1dp"
-                    android:text="low fat" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <CheckBox
-                    android:id="@+id/pref8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="1dp"
-                    android:text="low fat" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <CheckBox
-                    android:id="@+id/pref8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="1dp"
-                    android:text="low fat" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <CheckBox
-                    android:id="@+id/pref8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="1dp"
-                    android:text="low fat" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <CheckBox
-                    android:id="@+id/pref8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="1dp"
-                    android:text="low fat" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal">
-
-                <CheckBox
-                    android:id="@+id/pref8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:padding="1dp"
-                    android:text="low fat" />
-
             </TableRow>
 
             <Button
@@ -270,6 +150,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginBottom="45dp"
+                android:capitalize="characters"
+                android:onClick="startRecipes"
                 android:text="@string/button_done" />
 
         </LinearLayout>

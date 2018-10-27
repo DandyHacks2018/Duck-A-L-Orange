@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Duck A L\'Orange</string>
-    <string name="description">The description goes here it\'s gonna tell you that you need to use a string resource, I\'ll do that later-AB</string>
-    <string name="prompt_gender">Please enter your biological gender:</string>
+    <string name="description">The description goes here it\'s gonna tell you that you need to use a string resource, I\'ll do that later -AB</string>
+    <string name="prompt_gender">Please select your biological gender:</string>
     <string name="gender_male">Male</string>
     <string name="gender_female">Female</string>
-    <string name="prompt_age">Please enter your age</string>
-    <string name="prompt_weight">Please enter your weight</string>
-    <string name="prompt_height">Please enter your height</string>
-    <string name="button_done">DONE</string>
+    <string name="prompt_age">Age (years)</string>
+    <string name="prompt_weight">Weight (pounds)</string>
+    <string name="prompt_height">Height (centimeters)</string>
+    <string name="button_done">done</string>
     <string name="preferences">Preferences</string>
 </resources>

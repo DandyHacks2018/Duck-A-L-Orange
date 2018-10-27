@@ -9,5 +9,6 @@ public class Recipes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipes);
+        System.out.println(getIntent().getStringExtra("User info"));
     }
 }
