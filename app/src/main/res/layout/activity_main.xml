@@ -122,7 +122,6 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginBottom="38dp"
-        android:capitalize="characters"
         android:onClick="sendMessage"
         android:text="@string/button_done"
         app:layout_constraintBottom_toBottomOf="parent"
