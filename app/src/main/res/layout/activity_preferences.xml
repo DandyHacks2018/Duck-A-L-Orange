@@ -45,12 +45,18 @@
             android:gravity="center_horizontal"
             android:orientation="vertical"
             android:divider="?android:attr/dividerHorizontal"
-            android:showDividers="middle">
+            android:showDividers="middle"
+            android:layout_margin="10dp">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
 
                 <CheckBox
                     android:id="@+id/pref0"
@@ -58,46 +64,174 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:padding="1dp"
-                    android:text="gluten free" />
+                    android:text="@string/pref"
+                    android:textSize="18sp" />
 
-                <CheckBox
-                    android:id="@+id/pref1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="vegan"
-                    android:layout_weight="1"
-                    android:padding="1dp" />
-
-                <CheckBox
-                    android:id="@+id/pref2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="vegetarian"
-                    android:layout_weight="1"
-                    android:padding="1dp" />
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
 
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
+
+                <CheckBox
+                    android:id="@+id/pref1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="@string/pref1"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
+
+                <CheckBox
+                    android:id="@+id/pref2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="@string/pref2"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
 
                 <CheckBox
                     android:id="@+id/pref3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="no pork"
                     android:layout_weight="1"
-                    android:padding="1dp" />
+                    android:padding="1dp"
+                    android:text="@string/pref3"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
 
                 <CheckBox
                     android:id="@+id/pref4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="no beef"
                     android:layout_weight="1"
-                    android:padding="1dp" />
+                    android:padding="1dp"
+                    android:text="@string/pref4"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
+
+                <CheckBox
+                    android:id="@+id/pref5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="@string/pref5"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
+
+                <CheckBox
+                    android:id="@+id/pref6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:text="@string/pref6"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
 
                 <CheckBox
                     android:id="@+id/pref7"
@@ -105,13 +239,24 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:padding="1dp"
-                    android:text="no chicken" />
+                    android:text="@string/pref7"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
+
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal">
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
 
                 <CheckBox
                     android:id="@+id/pref8"
@@ -119,23 +264,38 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:padding="1dp"
-                    android:text="low fat" />
+                    android:text="@string/pref8"
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Space
+                    android:layout_width="?attr/listPreferredItemPaddingLeft"
+                    android:layout_height="match_parent" />
 
                 <CheckBox
-                    android:id="@+id/pref5"
+                    android:id="@+id/pref9"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="halal"
                     android:layout_weight="1"
-                    android:padding="1dp" />
+                    android:padding="1dp"
+                    android:text="@string/pref9"
+                    android:textSize="18sp" />
 
-                <CheckBox
-                    android:id="@+id/pref6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="kosher"
-                    android:layout_weight="1"
-                    android:padding="1dp" />
+                <Space
+                    android:layout_width="?android:attr/listPreferredItemPaddingRight"
+                    android:layout_height="match_parent" />
+
             </TableRow>
 
             <TableRow
@@ -147,6 +307,7 @@
                     android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginBottom="15dp"
                     android:onClick="startRecipes"
                     android:text="@string/button_done" />

@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class Preferences extends AppCompatActivity {
     String s;
-    CheckBox[] chks = new CheckBox[9];
+    CheckBox[] chks = new CheckBox[10];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,7 @@ public class Preferences extends AppCompatActivity {
         chks[6] = findViewById(R.id.pref6);
         chks[7] = findViewById(R.id.pref7);
         chks[8] = findViewById(R.id.pref8);
+        chks[9] = findViewById(R.id.pref9);
     }
     public void startRecipes(View view){
         //Toast.makeText(this, s, Toast.LENGTH_SHORT).show();

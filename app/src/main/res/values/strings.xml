@@ -9,4 +9,16 @@
     <string name="prompt_height">Height (centimeters)</string>
     <string name="button_done">done</string>
     <string name="preferences">Preferences</string>
+    <string name="button_find">find</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="pref">Vegetarian</string>
+    <string name="pref1">Vegan</string>
+    <string name="pref2">Dairy Free</string>
+    <string name="pref3">Wheat/Gluten-Free</string>
+    <string name="pref4">Low Carb</string>
+    <string name="pref5">High Fiber</string>
+    <string name="pref6">Low Sodium</string>
+    <string name="pref7">Low/No Sugar</string>
+    <string name="pref8">Low Cholesterol</string>
+    <string name="pref9">Low Fat</string>
 </resources>

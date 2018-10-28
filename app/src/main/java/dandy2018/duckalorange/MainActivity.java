@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public boolean check(){
-        return (male.isChecked() || female.isChecked()) && !ageView.getText().toString().equals("") && !weightView.getText().toString().equals("") && !heightView.getText().toString().equals("");
+        return (male.isChecked() || female.isChecked()) && !ageView.getText().toString().isEmpty() && !weightView.getText().toString().equals("") && !heightView.getText().toString().equals("");
     }
     public double calories(boolean gender, double age, double weight, double height){
         if (gender){
