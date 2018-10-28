@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     EditText ageView;
     EditText weightView;
     EditText heightView;
+    Spinner spinner;
+    int spinnerIndex = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         heightView = findViewById(R.id.txtHeight);
 
         // Spinner element
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        spinner = findViewById(R.id.spinner);
         // Spinner click listener
         spinner.setOnItemSelectedListener(this);
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -47,11 +49,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        spinnerIndex = position;
         // On selecting a spinner item
-        String item = parent.getItemAtPosition(position).toString();
-
+        //item = parent.getItemAtPosition(position).toString();
         // Showing selected spinner item
-        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
     }
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub
@@ -64,9 +65,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             double age = Double.parseDouble(ageView.getText().toString());
             double weight = Double.parseDouble(weightView.getText().toString());
             double height = Double.parseDouble(heightView.getText().toString());
-            int exercise = 2; // TODO
-            System.out.println(caloriesPerMeal(gender, age, weight, height, exercise));
-            intent.putExtra("User info", caloriesPerMeal(gender, age, weight, height, exercise));
+            //int exercise = 2; // TODO
+            //System.out.println(caloriesPerMeal(gender, age, weight, height, exercise));
+            intent.putExtra("Info", caloriesPerMeal(gender, age, weight, height, spinnerIndex).toString());
             startActivity(intent);
         } else {
             Toast.makeText(this,"Please make sure all the fields are filled in correctly", Toast.LENGTH_SHORT).show();
@@ -74,21 +75,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     public boolean check(){
-        return (male.isChecked() || female.isChecked()) && !ageView.getText().toString().isEmpty() && !weightView.getText().toString().equals("") && !heightView.getText().toString().equals("");
+        return (male.isChecked() || female.isChecked()) && !ageView.getText().toString().isEmpty() && !weightView.getText().toString().isEmpty() && !heightView.getText().toString().isEmpty() && spinnerIndex != -1;
     }
 
-    public double caloriesPerMeal(boolean gender, double age, double weight, double height, int exercise){
+    public Double caloriesPerMeal(boolean gender, double age, double weight, double height, int exercise){
         double xFact;
-        if (exercise == 1) xFact = 1.2;
-        else if (exercise == 2) xFact = 1.375;
-        else if (exercise == 3) xFact = 1.55;
-        else if (exercise == 4) xFact = 1.725;
-        else if (exercise == 5) xFact = 1.9;
+        if (exercise == 0) xFact = 1.2;
+        else if (exercise == 1) xFact = 1.375;
+        else if (exercise == 2) xFact = 1.55;
+        else if (exercise == 3) xFact = 1.725;
+        else if (exercise == 4) xFact = 1.9;
+        else return -1.0;
 
-        if (gender){
-            return .26*(10*weight + 6.25*height - 5*age - 161);
+        /*if (gender){
+            return .26*(10*weight + 6.25*height - 5*age - 161)*xFact;
         } else{
-            return .26*(10*weight + 6.25*height - 5*age + 5);
-        }
+            return .26*(10*weight + 6.25*height - 5*age + 5)*xFact;
+        }*/
+
+        return .32 * (10 * weight + 6.25 * height - 5 * age + (gender ? 5 : -161)) * xFact;
     }
 }

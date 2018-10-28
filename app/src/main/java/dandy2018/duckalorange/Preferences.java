@@ -14,7 +14,7 @@ public class Preferences extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preferences);
-        s = getIntent().getStringExtra("User info");
+        s = getIntent().getStringExtra("Info");
         chks[0] = findViewById(R.id.pref0);
         chks[1] = findViewById(R.id.pref1);
         chks[2] = findViewById(R.id.pref2);
@@ -34,7 +34,7 @@ public class Preferences extends AppCompatActivity {
             }
         }
         Intent intent = new Intent(this, Recipes.class);
-        intent.putExtra("User info", s);
+        intent.putExtra("Info", s);
         startActivity(intent);
     }
 }

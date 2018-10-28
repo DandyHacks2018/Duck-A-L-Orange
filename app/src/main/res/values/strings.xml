@@ -5,15 +5,15 @@
     <string name="gender_male">Male</string>
     <string name="gender_female">Female</string>
     <string name="prompt_age">Age (years)</string>
-    <string name="prompt_weight">Weight (pounds)</string>
-    <string name="prompt_height">Height (centimeters)</string>
+    <string name="prompt_weight">Weight (kg)</string>
+    <string name="prompt_height">Height (cm)</string>
     <string name="prompt_activity">Activity</string>
     <string-array name="activity_array">
-        <item>lazy af</item>
-        <item>division 3</item>
-        <item>jacked af</item>
-        <item>brolic</item>
-        <item>squash</item>
+        <item>Little to no exercise</item>
+        <item>Exercise 1-2 times a week</item>
+        <item>Exercise 3-5 times a week</item>
+        <item>Exercise 6-7 times a week</item>
+        <item>Exercise 8+ times a week</item>
     </string-array>
     <string name="button_done">done</string>
     <string name="preferences">Preferences</string>
