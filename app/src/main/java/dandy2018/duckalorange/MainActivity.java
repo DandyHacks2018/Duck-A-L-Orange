@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     EditText ageView;
     EditText weightView;
     EditText heightView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         weightView = findViewById(R.id.txtWeight);
         heightView = findViewById(R.id.txtHeight);
     }
+
     public void sendMessage(View view){
         if(check()){
             Intent intent = new Intent(this, Preferences.class);
@@ -34,21 +36,31 @@ public class MainActivity extends AppCompatActivity {
             double age = Double.parseDouble(ageView.getText().toString());
             double weight = Double.parseDouble(weightView.getText().toString());
             double height = Double.parseDouble(heightView.getText().toString());
-            System.out.println(calories(gender, age, weight, height));
-            intent.putExtra("User info", calories(gender, age, weight, height));
+            int exercise = 2; // TODO
+            System.out.println(caloriesPerMeal(gender, age, weight, height, exercise));
+            intent.putExtra("User info", caloriesPerMeal(gender, age, weight, height, exercise));
             startActivity(intent);
         } else {
             Toast.makeText(this,"Please make sure all the fields are filled in correctly", Toast.LENGTH_SHORT).show();
         }
     }
+
     public boolean check(){
         return (male.isChecked() || female.isChecked()) && !ageView.getText().toString().isEmpty() && !weightView.getText().toString().equals("") && !heightView.getText().toString().equals("");
     }
-    public double calories(boolean gender, double age, double weight, double height){
+
+    public double caloriesPerMeal(boolean gender, double age, double weight, double height, int exercise){
+        double xFact;
+        if (exercise == 1) xFact = 1.2;
+        else if (exercise == 2) xFact = 1.375;
+        else if (exercise == 3) xFact = 1.55;
+        else if (exercise == 4) xFact = 1.725;
+        else if (exercise == 5) xFact = 1.9;
+
         if (gender){
-            return 10*weight + 6.25*height - 5*age - 161;
+            return .26*(10*weight + 6.25*height - 5*age - 161);
         } else{
-            return 10*weight + 6.25*height - 5*age + 5;
+            return .26*(10*weight + 6.25*height - 5*age + 5);
         }
     }
 }
